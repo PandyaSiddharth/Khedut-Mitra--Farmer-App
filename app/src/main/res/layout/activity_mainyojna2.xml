@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".mainyojna2">
+
+<ImageView
+    android:id="@+id/desc_img"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:src="@mipmap/ic_launcher" />
+
+<TextView
+    android:id="@+id/desc_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="Dummy Header"
+    android:gravity="center"
+    android:textColor="@color/g3"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+    <TextView
+        android:id="@+id/desc_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Dummy Description"
+        android:textColor="@color/g3"
+        android:textSize="18dp" />
+
+<TextView
+    android:id="@+id/desc_status"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#FF0000"
+    android:layout_gravity="center_horizontal"
+    android:text="Dummy Description"
+    android:textSize="18dp" />
+    <TextView
+        android:id="@+id/desc_link"
+        android:textColor="#0000FF"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:autoLink="web"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Dummy Description"
+        android:textSize="20dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

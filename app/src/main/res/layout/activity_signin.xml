@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".signin"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="20dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/mfarm"
+            app:lottie_rawRes="@raw/modernfarm"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="લોગિન ફોર્મ"
+            android:layout_gravity="center"
+            android:fontFamily="@font/vadodararegular"
+            android:textSize="40sp"
+            android:textColor="@color/g1"
+            android:layout_marginBottom="10dp"
+            android:transitionName="logo_desc"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="સુસ્વાગતમ્,"
+            android:textSize="20sp"
+            android:textColor="@color/g1"
+            android:transitionName="logo_text"
+            android:fontFamily="@font/vadodaramedium"
+            android:layout_marginTop="-20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* રજિસ્ટર્ડ ઈમેલ અને પાસવર્ડનો ઉપયોગ કરીને લોગિન કરો."
+            android:textSize="11sp"
+            android:transitionName="logo_text"
+            android:fontFamily="@font/vadodaramedium"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/g3"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ઇ-મેઇલ"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/s_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pwd"
+                app:passwordToggleEnabled="true"
+                android:transitionName="password_tran"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/s_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/s_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="સબમિટ કરો."
+            android:fontFamily="@font/vadodarabold"
+            android:background="@drawable/button_background"
+            android:textColor="#fff"
+            android:bottomRightRadius="10dp"
+            android:bottomLeftRadius="10dp"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="100dp"
+            android:transitionName="button_tran"/>
+        <Button
+            android:id="@+id/forgotpwd_btn"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/vadodararegular"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="પાસવર્ડ ભૂલી ગયા છો?"
+            android:background="#00000000"
+            android:textColor="@color/g3"
+            />
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/vadodararegular"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="નવા યુઝર? રજિસ્ટર કરો"
+            android:background="#00000000"
+            android:textColor="@color/g3"
+            />
+
+    </LinearLayout>
+</ScrollView>
+
+
